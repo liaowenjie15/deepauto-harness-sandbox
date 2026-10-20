@@ -1,0 +1,13 @@
+{
+  "name": "deepauto-harness-sandbox",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/normal-change.test.mjs",
+    "test:failure": "node --test fixtures/failing/intentional-failure.fixture.mjs",
+    "test:timeout": "node fixtures/timeout/sleep.fixture.mjs"
+  }
+}
